@@ -6,6 +6,8 @@ function createTable(data){
 
     console.log(data);
 
+    tbody.html("");
+
     data.forEach(function(elements) {
         console.log(elements);  
         var line = tbody.append("tr");
