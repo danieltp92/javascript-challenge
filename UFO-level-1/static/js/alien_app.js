@@ -29,6 +29,9 @@ function filterButton(){
     if(fecha){
         cleanData = cleanData.filter(x => x.datetime === fecha);
     }
+    else{
+        createTable(newData);
+    }
 
     createTable(cleanData);
 }
